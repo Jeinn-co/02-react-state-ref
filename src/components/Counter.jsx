@@ -1,9 +1,10 @@
 // rafece
-import React from "react";
+import React, { useState } from "react";
 
 const Counter = () => {
-  let count = 0;
-
+  // let count = 0;
+  const [count, setCount] = useState(0)
+  
   console.log('[count-out]',count)
 
   return (
@@ -11,9 +12,10 @@ const Counter = () => {
       <h3>Counter = {count}</h3>
       <button
         onClick={() => {
-          count += 1
+          // count += 1
+          setCount(count+ 1)
           console.log('[count]','clicked')
-          console.log('[count-in]',count)
+          console.log('[count-in]',count) // got old value.
         }}
       >
         add count
