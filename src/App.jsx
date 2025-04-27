@@ -2,7 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import MyButton from "./components/MyButton3";
+import MyButton from "./components/MyButton4";
 import MyTitle from "./components/MyTitle";
 // import Counter from "./components/Counter";
 
