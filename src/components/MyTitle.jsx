@@ -2,7 +2,7 @@
 import React from "react";
 
 const MyTitle = (props) => {
-  console.log("[props]", props);
+  // console.log("[props]", props);
   const { userName, children } = props;
   // console.log("[userName]", userName);
 
