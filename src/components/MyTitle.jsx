@@ -1,10 +1,12 @@
 // rafece
-import React from 'react'
+import React from "react";
 
-const MyTitle = () => {
-  return (
-    <h1> hello </h1>
-  )
-}
+const MyTitle = (props) => {
+  // console.log("[props]", props);
+  const { userName } = props;
+  // console.log("[userName]", userName);
 
-export default MyTitle
+  return <h1> hello, {userName} </h1>;
+};
+
+export default MyTitle;

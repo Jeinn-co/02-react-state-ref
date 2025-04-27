@@ -11,7 +11,7 @@ function App() {
     <>
       {/* <h1> hello </h1>
       <button> click me! </button> */}
-      <MyTitle></MyTitle>
+      <MyTitle userName="John"></MyTitle>
       <MyButton></MyButton>
     </>
   )
