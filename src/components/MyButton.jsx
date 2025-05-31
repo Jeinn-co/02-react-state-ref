@@ -1,13 +1,17 @@
 import React from "react";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
+
+
 
 const MyButton = () => {
   const count = useRef(0);
+  const [isState, setIsState] = useState(false)
 
   const handleClick = () => {
     count.current += 1;
     console.log('[count]', count.current)
     console.log("clicked");
+    setIsState(!isState)
   };
 
   useEffect(() => {
