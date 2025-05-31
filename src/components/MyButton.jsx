@@ -6,14 +6,18 @@ const MyButton = () => {
 
   console.log("[refCount-out]", refCount.current);
 
+  console.log("[out-side]", "executed!");
+
   useEffect(() => {
     console.log("[useEffect]", "effect 開始");
 
     return () => {
       console.log("[useEffect]", "clean 清理");
     };
-  // }, [refCount.current]);
+    // }, [refCount.current]);
   }, []);
+
+  console.log("[out-side]", "executed! II");
 
   const handleClick = () => {
     refCount.current += 1;
@@ -22,7 +26,12 @@ const MyButton = () => {
     setBolVal(!bolVal);
   };
 
-  return <button onClick={handleClick}> click me! </button>;
+  return (
+    <>
+      {console.log("[render]: draw button")}
+      <button onClick={handleClick}> click me! </button>
+    </>
+  );
 };
 
 export default MyButton;

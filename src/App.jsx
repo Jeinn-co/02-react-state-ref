@@ -15,7 +15,9 @@ function App() {
       <MyTitle userName="John">
         <div style={{ color: "lightgreen" }}>children content</div>
       </MyTitle>
-      <MyButton></MyButton>
+      <MyButton key={count} />
+      <p>{count}</p>
+      <button onClick={() => setCount(count + 1)}>button key changed</button>
       {/* <Counter/> */}
     </>
   );
